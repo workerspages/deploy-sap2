@@ -1,5 +1,5 @@
 
-# 🚀 Automation AIO - SAP BTP 部署项目
+# SAP BTP 部署项目
 
 [Deploy to SAP BTP](https://account.hanatrial.ondemand.com/)
 
