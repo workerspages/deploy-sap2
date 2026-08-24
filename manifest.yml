@@ -5,6 +5,6 @@ applications:
     disk_quota: 10240M       # 硬盘给 1G (注意！ 硬盘大小要大于镜像大小)        
     random-route: true                
     docker:
-      image: ghcr.io/workerspages/metube-alist-emby:sha-9e0fafc
+      image: ghcr.io/workerspages/metube-alist-emby:sha-b80c2c5
     env:
       ALIST_USER: "admin" 
