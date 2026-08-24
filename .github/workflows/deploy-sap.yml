@@ -39,6 +39,11 @@ jobs:
           cf auth "$CF_USER" "$CF_PASS"
           cf target -o "$CF_ORG" -s "$CF_SPACE"
 
+      # 👇 增加的新功能：在部署前停止应用
+      - name: Stop application on SAP before deploying
+        run: |
+          cf stop <您的应用名称> || echo "应用可能不存在，跳过停止步骤，继续执行部署。"
+        
       - name: Push App
         id: cf_push
         run: cf push
