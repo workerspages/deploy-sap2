@@ -1,10 +1,10 @@
 ---
 applications:
   - name: pansou
-    memory: 2048M    
+    memory: 1024M    
     disk_quota: 1024M       # 硬盘给 1G (注意！ 硬盘大小要大于镜像大小)        
     random-route: true                
     docker:
       image: ghcr.io/fish2018/pansou-web:latest
     env:
-      ALIST_USER: "admin" 
+      AUTH_TOKEN_EXPIRY: "24" 
